@@ -39,7 +39,7 @@ def uploads():
 @app.route("/photo/<imageId>.jpg")
 def get_frame(imageId):
     # 图片上传保存的路径
-    with open(r'D:\BaiduNetdiskDownload\IDA\pycharm\PyCharm 2021.2.3\flaskProject\photo\{}.jpg'.format(imageId), 'rb') as f:
+    with open(r'D:\BaiduNetdiskDownload\IDA\pycharm\PyCharm 2021.2.3\flaskProject1\photo\{}.jpg'.format(imageId), 'rb') as f:
         image = f.read()
         resp = Response(image, mimetype="image/jpg")
         return resp
